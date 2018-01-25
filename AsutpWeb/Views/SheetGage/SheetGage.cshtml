@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "УА";
+}
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>DateStart</th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var b in ViewBag.Test)
+        {
+            <tr>
+                <td>@b.DateStart</td>
+                <td>Doe</td>
+                <td>john@example.com</td>      
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
